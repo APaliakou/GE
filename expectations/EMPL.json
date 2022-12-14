@@ -1,0 +1,442 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "EMPL",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 40,
+        "min_value": 40
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {},
+            "metric_name": "table.row_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_set",
+      "kwargs": {
+        "column_set": [
+          "last_name",
+          "job_id",
+          "salary",
+          "employee_id",
+          "email",
+          "hire_date",
+          "department_id",
+          "phone_number",
+          "manager_id",
+          "first_name"
+        ],
+        "exact_match": null
+      },
+      "meta": {
+        "profiler_details": {
+          "success_ratio": 1.0
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "last_name"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "last_name"
+            },
+            "metric_name": "column_values.unique.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "email"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "email"
+            },
+            "metric_name": "column_values.unique.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "last_name"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "last_name"
+            },
+            "metric_name": "column_values.nonnull.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "email"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "email"
+            },
+            "metric_name": "column_values.nonnull.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "first_name",
+        "mostly": 1.0,
+        "value_set": [
+          "Irene",
+          "Hermann",
+          "Sarah",
+          "Guy",
+          "Den",
+          "Luis",
+          "Ismael",
+          "William",
+          "Karen",
+          "Susan",
+          "Jack",
+          "Charles",
+          "Valli",
+          "Shelley",
+          "Michael",
+          "Jennifer",
+          "Shanta",
+          "Sigal",
+          "Neena",
+          "Britney",
+          "John",
+          "Kimberely",
+          "Nancy",
+          "Matthew",
+          "Shelli",
+          "Jose Manuel",
+          "Alexander",
+          "Bruce",
+          "Pat",
+          "Jonathon",
+          "Lex",
+          "Daniel",
+          "Adam",
+          "David",
+          "Payam",
+          "Diana"
+        ]
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "first_name"
+            },
+            "metric_name": "column.distinct_values",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1,
+          "parse_strings_as_datetimes": false
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_unique_value_count_to_be_between",
+      "kwargs": {
+        "column": "first_name",
+        "max_value": 36,
+        "min_value": 36,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "first_name"
+            },
+            "metric_name": "column.distinct_values.count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "first_name",
+        "max_value": 0.9230769230769231,
+        "min_value": 0.9230769230769231,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "first_name"
+            },
+            "metric_name": "column.unique_proportion",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "last_name",
+        "mostly": 1.0,
+        "value_set": [
+          "Fay",
+          "Kaufling",
+          "Hartstein",
+          "Ernst",
+          "Russell",
+          "Chen",
+          "Faviet",
+          "Raphaely",
+          "Livingston",
+          "Mavris",
+          "Sciarra",
+          "De Haan",
+          "Baida",
+          "Baer",
+          "Whalen",
+          "Weiss",
+          "Hunold",
+          "Mikkilineni",
+          "Pataballa",
+          "Fripp",
+          "Johnson",
+          "Colmenares",
+          "Vollman",
+          "King",
+          "Austin",
+          "Higgins",
+          "Partners",
+          "Taylor",
+          "Everett",
+          "Gietz",
+          "Popp",
+          "Urman",
+          "Himuro",
+          "Greenberg",
+          "Khoo",
+          "Grant",
+          "Lorentz",
+          "Kochhar",
+          "Tobias",
+          "Bell"
+        ]
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "last_name"
+            },
+            "metric_name": "column.distinct_values",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1,
+          "parse_strings_as_datetimes": false
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_unique_value_count_to_be_between",
+      "kwargs": {
+        "column": "last_name",
+        "max_value": 40,
+        "min_value": 40,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "last_name"
+            },
+            "metric_name": "column.distinct_values.count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "last_name",
+        "max_value": 1.0,
+        "min_value": 1.0,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "last_name"
+            },
+            "metric_name": "column.unique_proportion",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "email",
+        "mostly": 1.0,
+        "value_set": [
+          "bruce.ernst@sqltutorial.org",
+          "matthew.weiss@sqltutorial.org",
+          "karen.partners@sqltutorial.org",
+          "michael.hartstein@sqltutorial.org",
+          "daniel.faviet@sqltutorial.org",
+          "nancy.greenberg@sqltutorial.org",
+          "irene.mikkilineni@sqltutorial.org",
+          "valli.pataballa@sqltutorial.org",
+          "karen.colmenares@sqltutorial.org",
+          "jack.livingston@sqltutorial.org",
+          "ismael.sciarra@sqltutorial.org",
+          "jonathon.taylor@sqltutorial.org",
+          "sarah.bell@sqltutorial.org",
+          "lex.de haan@sqltutorial.org",
+          "alexander.khoo@sqltutorial.org",
+          "adam.fripp@sqltutorial.org",
+          "alexander.hunold@sqltutorial.org",
+          "jose manuel.urman@sqltutorial.org",
+          "pat.fay@sqltutorial.org",
+          "john.russell@sqltutorial.org",
+          "diana.lorentz@sqltutorial.org",
+          "sigal.tobias@sqltutorial.org",
+          "david.austin@sqltutorial.org",
+          "susan.mavris@sqltutorial.org",
+          "hermann.baer@sqltutorial.org",
+          "kimberely.grant@sqltutorial.org",
+          "shelley.higgins@sqltutorial.org",
+          "guy.himuro@sqltutorial.org",
+          "william.gietz@sqltutorial.org",
+          "john.chen@sqltutorial.org",
+          "neena.kochhar@sqltutorial.org",
+          "shanta.vollman@sqltutorial.org",
+          "steven.king@sqltutorial.org",
+          "payam.kaufling@sqltutorial.org",
+          "charles.johnson@sqltutorial.org",
+          "britney.everett@sqltutorial.org",
+          "den.raphaely@sqltutorial.org",
+          "jennifer.whalen@sqltutorial.org",
+          "luis.popp@sqltutorial.org",
+          "shelli.baida@sqltutorial.org"
+        ]
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "email"
+            },
+            "metric_name": "column.distinct_values",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1,
+          "parse_strings_as_datetimes": false
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_unique_value_count_to_be_between",
+      "kwargs": {
+        "column": "email",
+        "max_value": 40,
+        "min_value": 40,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "email"
+            },
+            "metric_name": "column.distinct_values.count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "email",
+        "max_value": 1.0,
+        "min_value": 1.0,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "email"
+            },
+            "metric_name": "column.unique_proportion",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "citation_date": "2022-12-14T11:09:45.410461Z",
+        "comment": "Created by effective Rule-Based Profiler of OnboardingDataAssistant with the configuration included.\n"
+      }
+    ],
+    "great_expectations_version": "0.15.39"
+  }
+}
